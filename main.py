@@ -1,17 +1,6 @@
 import youtube_dl
 import os
 
-dir_name = "/home/runner/YoutubeDL"
-test = os.listdir(dir_name)
-
-for item in test:
-    if item.endswith(".ytdl"):
-        os.remove(os.path.join(dir_name, item))
-        print('Removing file '+item)
-
-print('Done removing items')
-
-"""
 ydl = youtube_dl.YoutubeDL({
     'outtmpl': 'media/%(title)s.%(ext)s',
     'format': 'bestvideo+bestaudio/best'
@@ -35,4 +24,3 @@ else:
 print(video)
 title = video['title']
 print(title)
-"""
