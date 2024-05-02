@@ -1,23 +1,24 @@
 [[package]]
-category = "main"
-description = "ffmpeg python package url [https://github.com/jiashaokun/ffmpeg]"
 name = "ffmpeg"
+version = "1.4"
+description = "ffmpeg python package url [https://github.com/jiashaokun/ffmpeg]"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.4"
 
 [[package]]
-category = "main"
-description = "YouTube video downloader"
 name = "youtube-dl"
+version = "2021.12.17"
+description = "YouTube video downloader"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2020.1.24"
 
 [metadata]
-content-hash = "6aafeef37d1f1df2386ad12e32ab3ec7c9f723ce437127c262ef4b76271c66f7"
-python-versions = "^3.7"
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "16488132ed51a6b48563a803bb92246b66ed7ba1dabdd41ebddfb6ff011f4d43"
 
-[metadata.hashes]
-ffmpeg = ["6931692c890ff21d39938433c2189747815dca0c60ddc7f9bb97f199dba0b5b9"]
-youtube-dl = ["3ba838c943744cd4f1669f74328b9c0f7814145b92dfcf59c3278caf8175886f", "82189f971fbe3f4b2e66a9aba7fb5bdd1b4b8c0876d7cd55382045f5555a5e44"]
+[metadata.files]
+ffmpeg = []
+youtube-dl = []

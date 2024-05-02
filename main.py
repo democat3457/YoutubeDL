@@ -1,12 +1,16 @@
 import youtube_dl
 import os
 
-ydl = youtube_dl.YoutubeDL({
-    'outtmpl': 'media/%(title)s.%(ext)s',
-    'format': 'bestvideo+bestaudio/best'
-})
-
 url = input("Video URL: ")
+format = input("Format (blank for default): ")
+format = format if format else 'mp4/bestvideo,m4a/bestaudio'
+
+ydl = youtube_dl.YoutubeDL({
+    # 'outtmpl': 'media/%(title)s.%(ext)s',
+    # 'format': 'bestvideo+bestaudio/best'
+    'outtmpl': 'media/%(title)s.%(ext)s',
+    'format': format
+})
 
 with ydl:
     result = ydl.extract_info(
